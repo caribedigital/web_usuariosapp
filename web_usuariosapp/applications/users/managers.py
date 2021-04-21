@@ -3,7 +3,7 @@ from django.db import models
 from django.contrib.auth.models import BaseUserManager 
 
 class UserManager(BaseUserManager, models.Manager):
-
+        #funcion privada general con todos los atributos de usuarios y superusuarios
     def _create_user(self, username, email, password, is_staff, is_superuser, **extra_fields):#va a heredar los campos del modelo "users"
         user = self.model( #aqui los parametros deben ser los que contempla el modelo "users"
             username=username,
