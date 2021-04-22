@@ -2,7 +2,7 @@ from django.db import models
 
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin
 
-from .managers import UserManager
+from .managers import UserManager#para conectar el manager con modelo primero debemos importarlo aqui en models
 
 # Create your models here.
 
