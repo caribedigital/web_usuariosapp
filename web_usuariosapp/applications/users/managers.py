@@ -18,7 +18,7 @@ class UserManager(BaseUserManager, models.Manager):
     
     #funcion para crear usuarios normales
     def create_user(self, username, email, password=None, **extra_fields):#solo declaro como argumentos los campos obligatorios al crear un usuario normal.
-        return self._create_user(username, email, password, False, False, **estra_fields) #llama la función privada para crear el usuario normal
+        return self._create_user(username, email, password, False, False, **extra_fields) #llama la función privada para crear el usuario normal
         #Se le pasa como parametro al return False, False para desactivar is_staff y is_superuser para que no sea un superusuario
 
     #función para crear supersusurio
