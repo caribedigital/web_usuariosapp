@@ -11,11 +11,11 @@ from .models import User
 # Create your views here.
 
 class UserRegisterView(FormView):
-    template_name = 'users/register.html'
-    form_class = UserRegisterForm
+    template_name = 'users/register.html' #el template de la vista
+    form_class = UserRegisterForm #formulario creado en el forms.py
     success_url = '/' #el succes_url lo que hace es redirigir una vez se ejecuta con exito en este caso el registro de un usuario en el template
     
-    #funcion para validar los campos del formulario
+    #función para validar los campos del formulario
     def form_valid(self, form):
         #
         User.objects.create_user(
