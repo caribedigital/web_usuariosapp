@@ -94,7 +94,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 #Nuevo modelo de usuario
 AUTH_USER_MODEL = 'users.User' #si utilizamos AbstracBaseUser y PermissionsMixin, debemos
-                               #indicarle a django que desamos trabajar con otro modelo de usuario
+                               #indicarle a django que deseamos trabajar con otro modelo de usuario
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
